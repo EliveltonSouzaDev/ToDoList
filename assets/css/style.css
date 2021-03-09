@@ -167,7 +167,7 @@ body {
 }
 
 .delete-button{
-  background-color: #F03A17;
+  background-color: rgb(236, 75, 75);
   border: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   outline: none;
