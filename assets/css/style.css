@@ -154,7 +154,7 @@ body {
 }
 
 .check-button {
-  background-color: lightgreen;
+  background-color: #16C60C;
   border: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   outline: none;
@@ -167,7 +167,7 @@ body {
 }
 
 .delete-button{
-  background-color: lightcoral;
+  background-color: #F03A17;
   border: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   outline: none;
@@ -246,7 +246,7 @@ body {
 }
 
 .cite p{
-  font-size: .8em;
+  font-size: 1em;
 }
 
 .app{
@@ -258,7 +258,7 @@ body {
 }
 
 .cite-author{
-  font-size: .8em;
+  font-size: 1em;
 }
 
 }

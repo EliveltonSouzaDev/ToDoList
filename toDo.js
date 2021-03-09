@@ -28,7 +28,7 @@
 
         const botaoConclui = document.createElement('button')
         botaoConclui.classList.add('check-button')
-        botaoConclui.innerText = 'done'
+        botaoConclui.innerText = '✅'
         botaoConclui.addEventListener('click', concluirTarefa)
 
         return botaoConclui
@@ -45,7 +45,7 @@
     const BotaoDeleta = () =>{
         const botaoDeleta = document.createElement('button')
         botaoDeleta.classList.add('delete-button')
-        botaoDeleta.innerText = 'delete'
+        botaoDeleta.innerText = '❌'
         botaoDeleta.addEventListener('click', deletarTarefa)
 
         return botaoDeleta
