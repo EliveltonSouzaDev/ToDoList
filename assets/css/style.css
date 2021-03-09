@@ -89,7 +89,7 @@ body {
   justify-content: center;
   width: 100vw;
   min-height: 100vh;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .todo-list {
@@ -235,7 +235,7 @@ body {
     margin-top: 1em;
     box-shadow: none;
     min-width: 98%;
-    min-height:600px;
+    min-height:550px;
     padding: 0.5em;
   }
 
@@ -254,7 +254,11 @@ body {
 }
 
 .form-input, .form-button {
-  height: 50px;
+  height: 60px;
+}
+
+.form-input {
+  width: 70%;
 }
 
 .cite-author{
