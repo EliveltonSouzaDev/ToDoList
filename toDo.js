@@ -9,11 +9,11 @@
 
         const tarefa = document.createElement('li')
         tarefa.classList.add('task')
-        const conteudo = `<p class="content">${valor}</p><div>${btn}${btn2}</div>`
+        const conteudo = `<p class="content">${valor}</p>`
 
         tarefa.innerHTML = conteudo
-        const btn= tarefa.appendChild(BotaoConclui())
-        const btn2= tarefa.appendChild(BotaoDeleta())
+        tarefa.appendChild(BotaoConclui())
+        tarefa.appendChild(BotaoDeleta())
 
         lista.appendChild(tarefa)
 
