@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  background-color: #1c1e21;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
 }
 
 .app {
@@ -26,14 +26,12 @@ body {
   padding: 1rem;
   min-width: 600px;
   min-height: 500px;
-  border-radius: 3px;
-}
+  border-radius: 67px 0px 87px 0px / 54px 18px 58px 0px;}
 
 .title {
   border-bottom: 1px solid rgba(246, 241, 209, 0.5);
   font-size: 1.5rem;
   font-family: "BioRhyme", serif;
-  color: #F6F1D1;
   margin:0.5em 0.5em;
 }
 
@@ -66,7 +64,6 @@ body {
 
 .form-button {
   border: 1px;
-  background: #F6F1D1;
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 0.25rem;
@@ -76,11 +73,18 @@ body {
 
 .form-button:hover {
   color: #F6F1D1;
-  background: rgba(246, 241, 209, 0.1);
+  background:#A55AF0;
 }
 
 body {
   margin: 0;
+}
+
+.content-data{
+  color: #4FAAD4;
+  text-align: center;
+  margin-top: 0.8rem;
+
 }
 
 .app {
@@ -98,14 +102,15 @@ body {
   padding: 1rem;
   min-width: 500px;
   min-height: 450px;
-  box-shadow: 0em 0em 2em black;}
+  box-shadow: 0em 0em 2em rgb(88, 132, 149);}
 
 .title {
   border-bottom: 1px solid rgba(246, 241, 209, 0.5);
   font-size: 1.6rem;
   font-family: "BioRhyme", serif;
-  color: #fad000;
+  color:  #4FAAD4;
 }
+
 
 .form {
   display: flex;
@@ -122,19 +127,25 @@ body {
   background-color: #F6F1D1;
   border-color: rgba(255, 255, 255, 0.1);
   width:60%;
-
 }
 .form-button {
   border: 1px;
-  background: #F6F1D1;
+  background-color: #4FAAD4;
+  color:black;
+  font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 0.50rem;
 }
 .form-button:hover {
-  color: #fad000;
+  color: white;
   font-weight: bold;
-  background: #4c5057;
+}
+
+.form-date {
+  border-radius:15px;
+  padding: 0.5em;
+  width:12rem;
 }
 
 .list {
@@ -178,9 +189,14 @@ body {
   width:60px;
 }
 
+.soft-text {
+  color: lightgrey;
+  opacity: 0.7;
+}
+
 .task.done .check-button {
   background-color: #46494C;
-  color: #fad000;
+  color: #4FAAD4;
 }
 
 .check-icon {
@@ -214,6 +230,8 @@ body {
   margin-top: 1em;
   color: lightgrey;
   padding: 0.5em;
+  font-weight: bold;
+
 }
 
 
@@ -222,6 +240,7 @@ body {
   text-align: center;
   margin-top: 0.5rem;
   color: lightgrey;
+  font-weight: bold;
 }
 
 
@@ -237,7 +256,12 @@ body {
     min-width: 98%;
     min-height:550px;
     padding: 0.5em;
+    box-shadow: 0em 0em 2em rgb(88, 132, 149);}
+
   }
+
+  body{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) );  }
 
 .cite {
   margin-top: 1em;
@@ -250,19 +274,29 @@ body {
 }
 
 .app{
-  margin: 0;
+  margin: 0 auto;
+  max-width: 96%;
 }
 
-.form-input, .form-button {
-  height: 60px;
+.form-button {
+  width:95px;
+  height: 55px;
+  text-align: center;
+
 }
 
 .form-input {
   width: 70%;
+  height: 55px;
 }
 
 .cite-author{
   font-size: 1em;
+}
+
+
+.form-date {
+  width: 75px;
 }
 
 }
