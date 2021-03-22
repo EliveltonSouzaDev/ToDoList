@@ -1,26 +1,37 @@
 import BotaoConclui from './concluiTarefa.js'
 import BotaoDeleta from './deletaTarefa.js'
-import {carregaTarefa} from './carregaTarefa.js'
+import {
+    carregaTarefa
+} from './carregaTarefa.js'
 
 
 export const handleNovoItem = (evento) => {
 
     evento.preventDefault()
 
-   
+
+
     const tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
-    
+
     /*pega os dados dos inputs*/
     const input = document.querySelector('[data-form-input]')
     const valor = input.value
-    
+
     /*pega input data e formata*/
     const calendario = document.querySelector('[data-form-date]')
     const data = moment(calendario.value)
     const horario = data.format('HH:mm')
     const dataFormatada = data.format('DD/MM/YYYY')
-   
-    const concluida = true
+
+    /* verifica dados dos inputs*/
+    if (valor == "" || valor == undefined || dataFormatada == "Invalid date" ) {
+        alert("Preencha os campos corretamente!");
+        input.value = " "
+        dataFormatada = " "
+        return false;
+    }
+
+    const concluida = false
 
     const dados = {
         valor,
@@ -36,17 +47,19 @@ export const handleNovoItem = (evento) => {
 
     input.value = " "
 
-  
-
     carregaTarefa()
 }
 
-export const Tarefa = ({valor, horario, concluida}, id) => {
-    
+export const Tarefa = ({
+    valor,
+    horario,
+    concluida
+}, id) => {
+
     const tarefa = document.createElement('li')
     const conteudo = `<p class="content">${horario} * ${valor}</p>`
 
-    if (concluida){
+    if (concluida) {
         tarefa.classList.add('done')
     }
 
@@ -58,6 +71,6 @@ export const Tarefa = ({valor, horario, concluida}, id) => {
     tarefa.appendChild(BotaoConclui(carregaTarefa, id))
     tarefa.appendChild(BotaoDeleta(carregaTarefa, id))
 
-  return tarefa
+    return tarefa
 
 }
