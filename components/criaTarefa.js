@@ -25,9 +25,10 @@ export const handleNovoItem = (evento) => {
 
     /* verifica dados dos inputs*/
     if (valor == "" || valor == undefined || dataFormatada == "Invalid date" ) {
-        alert("Preencha os campos corretamente!");
+        alert("Por favor Preencha todos os campos corretamente!");
         input.value = " "
-        dataFormatada = " "
+        calendario.value = " "
+        window.location.replace(location)
         return false;
     }
 
@@ -46,6 +47,7 @@ export const handleNovoItem = (evento) => {
     localStorage.setItem('tarefas', JSON.stringify(tarefasAtualizadas))
 
     input.value = " "
+    calendario.value = " "
 
     carregaTarefa()
 }

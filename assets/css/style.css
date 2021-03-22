@@ -291,7 +291,7 @@ body {
 }
 
 .form-input {
-  width: 65%;
+  width: 68%;
   height: 55px;
 }
 
@@ -301,10 +301,13 @@ body {
 
 
 .form-date {
-  width: 120px;
+  width: 90px;
+  height:55px;
 }
 .form{
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
