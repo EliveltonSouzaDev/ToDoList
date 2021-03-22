@@ -258,10 +258,14 @@ body {
     padding: 0.5em;
     box-shadow: 0em 0em 2em rgb(88, 132, 149);}
 
-  }
+  
 
   body{
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) );  }
+
+    .task{
+      margin: 1em 0;
+    }
 
 .cite {
   margin-top: 1em;
@@ -282,11 +286,12 @@ body {
   width:95px;
   height: 55px;
   text-align: center;
+  margin-top: 0.8rem;
 
 }
 
 .form-input {
-  width: 70%;
+  width: 65%;
   height: 55px;
 }
 
@@ -296,7 +301,11 @@ body {
 
 
 .form-date {
-  width: 75px;
+  width: 120px;
+}
+.form{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 }

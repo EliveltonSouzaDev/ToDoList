@@ -7,21 +7,20 @@ export const handleNovoItem = (evento) => {
 
     evento.preventDefault()
 
-  
-
+   
     const tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
-
+    
     /*pega os dados dos inputs*/
     const input = document.querySelector('[data-form-input]')
     const valor = input.value
-   
+    
     /*pega input data e formata*/
     const calendario = document.querySelector('[data-form-date]')
     const data = moment(calendario.value)
     const horario = data.format('HH:mm')
     const dataFormatada = data.format('DD/MM/YYYY')
-
-    const concluida = false
+   
+    const concluida = true
 
     const dados = {
         valor,
@@ -36,6 +35,8 @@ export const handleNovoItem = (evento) => {
     localStorage.setItem('tarefas', JSON.stringify(tarefasAtualizadas))
 
     input.value = " "
+
+  
 
     carregaTarefa()
 }

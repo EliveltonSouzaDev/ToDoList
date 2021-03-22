@@ -4,7 +4,7 @@ import {
 
 
 export const criaData = (data) => {
-
+   
     const tarefas = JSON.parse(localStorage.getItem('tarefas')) || [];
     const dataMoment = moment(data, 'DD/MM/YYYY');
     const dataTopo = document.createElement('li');
