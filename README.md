@@ -1,8 +1,9 @@
 # SoftTo Do List
 
-projeto TodoList para colocar o aprendizado sobre Javascript, utilizando o DOM e localstorage.
+Projeto TodoList para colocar o aprendizado sobre Javascript em prática, utilizando o DOM e localstorage.
 
 
+![alt text](https://media.giphy.com/media/J7XFv5M28MZOEeqWtV/giphy.gif)
 ### 🛠️ Tecnologias
 
 As seguintes ferramentas foram utilizadas na construção do projeto:
