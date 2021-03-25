@@ -8,88 +8,13 @@
 
 body {
   margin: 0;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(69, 86, 102, 1) 0%, rgba(34, 34, 34, 1) 90%);
 }
 
 .app {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  min-height: 100vh;
-}
-
-.todo-list {
-  background-color: #303237;
-  font-family: "Space Mono", monospace;
-  padding: 1rem;
-  min-width: 600px;
-  min-height: 500px;
-  border-radius: 67px 0px 87px 0px / 54px 18px 58px 0px;}
-
-.title {
-  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
-  font-size: 1.5rem;
-  font-family: "BioRhyme", serif;
-  margin:0.5em 0.5em;
-}
-
-.frase{
-  font-size: 1rem;
-  text-align: center;
-  font-style: italic;
-  color: lightgrey;
-
-}
-.form {
-  display: flex;
-  justify-content: center;
-}
-
-.form-input,
-.form-button {
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 0.75rem;
-}
-
-.form-input {
-  outline: none;
-  background-color: #F6F1D1;
-  border-color: rgba(255, 255, 255, 0.1);
-  width: 50%;
-  border-radius: 8px;
-}
-
-.form-button {
-  border: 1px;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-left: 0.25rem;
-  border-radius: 8px;
-
-}
-
-.form-button:hover {
-  color: #F6F1D1;
-  background:#A55AF0;
-}
-
-body {
-  margin: 0;
-}
-
-.content-data{
-  color: #4FAAD4;
-  text-align: center;
-  margin-top: 0.8rem;
-
-}
-
-.app {
-  display: flex;
-  align-items: center;
   justify-content: center;
   width: 100vw;
   min-height: 100vh;
@@ -100,52 +25,84 @@ body {
   background-color: #303237;
   font-family: "Space Mono", monospace;
   padding: 1rem;
-  min-width: 500px;
-  min-height: 450px;
-  box-shadow: 0em 0em 2em rgb(88, 132, 149);}
+  min-width: 550px;
+  min-height: 500px;
+  border-radius: 67px 0px 87px 0px / 54px 18px 58px 0px;
+  box-shadow: 0em 0em 2em rgb(88, 132, 149);
+}
 
 .title {
   border-bottom: 1px solid rgba(246, 241, 209, 0.5);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: "BioRhyme", serif;
-  color:  #4FAAD4;
+  margin: 0.5em 0.5em;
+  color: #4FAAD4;
 }
 
+.frase {
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+  color: lightgrey;
+}
+
+.form-input {
+  outline: none;
+  background-color: #F6F1D1;
+  border-color: rgba(255, 255, 255, 0.1);
+  width: 50%;
+  border-radius: 8px;
+  font-size: 2rem;
+
+}
+
+.content-data {
+  color: #4FAAD4;
+  text-align: center;
+  margin-top: 0.8rem;
+}
 
 .form {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
 }
-.form-input, .form-button {
-  border-radius: 15px;
-  padding: 0.80rem;
-  font-size: .8rem;
-}
+
 .form-input {
   outline: none;
   background-color: #F6F1D1;
   border-color: rgba(255, 255, 255, 0.1);
-  width:60%;
+  width: 60%;
+  font-size: 1rem;
+  border-radius: 15px;
+  padding: 0.80rem;
+
 }
+
 .form-button {
   border: 1px;
   background-color: #4FAAD4;
-  color:black;
+  color: black;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 0.50rem;
+  border-radius: 15px;
+  padding: 0.80rem;
+  font-size: .8rem;
 }
+
 .form-button:hover {
-  color: white;
+  color: black;
   font-weight: bold;
+  background-color: lightgrey;
+  transition: 0.5s linear;
 }
 
 .form-date {
-  border-radius:15px;
+  border-radius: 15px;
   padding: 0.5em;
-  width:12rem;
+  width: 12rem;
 }
 
 .list {
@@ -173,11 +130,11 @@ body {
   cursor: pointer;
   margin-left: 1rem;
   max-height: 25px;
-  width:60px;
+  width: 60px;
 
 }
 
-.delete-button{
+.delete-button {
   background-color: rgb(204, 133, 133);
   border: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -186,7 +143,7 @@ body {
   cursor: pointer;
   margin-left: 2rem;
   max-height: 25px;
-  width:60px;
+  width: 60px;
 }
 
 .soft-text {
@@ -216,16 +173,16 @@ body {
   text-decoration: line-through;
 }
 
-.done{
-  color:lightgreen;
+.done {
+  color: #16C60C;
 }
 
-.content{
+.content {
   width: 500px;
   font-size: 1em;
 }
 
-.cite{
+.cite {
   width: 450px;
   margin-top: 1em;
   color: lightgrey;
@@ -234,9 +191,7 @@ body {
 
 }
 
-
-
-.cite-author{
+.cite-author {
   text-align: center;
   margin-top: 0.5rem;
   color: lightgrey;
@@ -244,71 +199,66 @@ body {
 }
 
 
+@media screen and (max-width: 768px) {
 
-/*# sourceMappingURL=style.css.map */
+  body {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(69, 86, 102, 1));
+  }
 
+  .app {
+    margin: 0 auto;
+    max-width: 96%;
+  }
 
-@media screen and (max-width: 768px){
-  
   .todo-list {
     margin-top: 0.5em;
     box-shadow: none;
     min-width: 98%;
-    min-height:550px;
+    min-height: 550px;
     padding: 0.5em;
-    box-shadow: 0em 0em 2em rgb(88, 132, 149);}
+    box-shadow: 0em 0em 2em rgb(88, 132, 149);
+  }
 
-  
+  .task {
+    margin: 1em 0;
+  }
 
-  body{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) );  }
+  .cite {
+    margin-top: 1em;
+    max-width: 90%;
+    text-align: justify;
+  }
 
-    .task{
-      margin: 1em 0;
-    }
+  .cite p {
+    font-size: 1em;
+  }
 
-.cite {
-  margin-top: 1em;
-  max-width: 90%;
-  text-align: justify;
-}
+  .form-button {
+    width: 100px;
+    height: 55px;
+    text-align: center;
+    margin-top: 0.8rem;
+  }
 
-.cite p{
-  font-size: 1em;
-}
+  .form-input {
+    width: 68%;
+    height: 55px;
+  }
 
-.app{
-  margin: 0 auto;
-  max-width: 96%;
-}
+  .cite-author {
+    font-size: 1em;
+  }
 
-.form-button {
-  width:95px;
-  height: 55px;
-  text-align: center;
-  margin-top: 0.8rem;
+  .form-date {
+    width: 90px;
+    height: 55px;
+  }
 
-}
-
-.form-input {
-  width: 68%;
-  height: 55px;
-}
-
-.cite-author{
-  font-size: 1em;
-}
-
-
-.form-date {
-  width: 90px;
-  height:55px;
-}
-.form{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
 }

@@ -9,8 +9,6 @@ export const handleNovoItem = (evento) => {
 
     evento.preventDefault()
 
-
-
     const tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
 
     /*pega os dados dos inputs*/
@@ -24,7 +22,7 @@ export const handleNovoItem = (evento) => {
     const dataFormatada = data.format('DD/MM/YYYY')
 
     /* verifica dados dos inputs*/
-    if (valor == "" || valor == undefined || dataFormatada == "Invalid date" ) {
+    if (valor == "" || valor == undefined || dataFormatada == "Invalid date") {
         alert("Por favor Preencha todos os campos corretamente!");
         input.value = " "
         calendario.value = " "
@@ -66,7 +64,6 @@ export const Tarefa = ({
     }
 
     tarefa.classList.add('task')
-
 
     tarefa.innerHTML = conteudo
 
